@@ -1,0 +1,100 @@
+<div class="footer">
+ <div class="container">
+  <div class="footer__col--logo footer__col--mobile">
+    <img src="{{ Image(options['global__logo']).src }}" alt="{{ Image(options['global__logo']).alt }}"/>
+  </div>
+
+  <div class="footer__col footer__col--left">
+    <h3>{{ footer_menu_left.title }}</h3>
+     {% if footer_menu_left %}
+    <ul>
+    {% for item in footer_menu_left.get_items %}
+      <li>
+        <a href="{{ item.link }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+     {% endif %}
+  </div>
+
+  <div class="footer__col footer__col--center">
+    <h3>{{ footer_menu_center.title }}</h3>
+    {% if  footer_menu_center %}
+    <ul>
+    {% for item in footer_menu_center.get_items %}
+      <li>
+        <a href="{{ item.link }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+
+         {# {% for component in post.get_field('landing-page-') %}  #}
+       
+         {# {% endfor %} #}
+  <div class="footer__col footer__col--location">
+    <h3>{{ footer_menu_right.title }}</h3>
+     {% if  footer_menu_right %}
+    <div class="footer__col--details">
+      {% set location = Post(options['footer__contact']) %}
+      <p class="footer__col--address">
+        <span>{{ location.title }}</span>
+        <br>
+        {{ location.get_field('location__address-street') }},
+        <br>
+        {{ location.get_field('location__address-city')}}
+        <br>
+        {{ location.get_field('location__address-postcode')}}
+      </p>
+      <p class="footer__col--contact">
+        Phone: <a href="tel:{{ location.get_field('location__phone') | replace(' ', '') }}">{{ location.get_field('location__phone') }}</a>
+        <br>
+        Email: <a href="mailto:{{ location.get_field('location__email') }}">{{ location.get_field('location__email') }}</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer__col--desktop">
+    <div class="footer__col--logo">
+      <img src="{{ Image(options['global__logo']).src }}" alt="{{ Image(options['global__logo']).alt }}"/>
+    </div>
+
+    <div class="footer__socials">
+      <ul>
+        <li class="footer__socials-facebook">
+          <a href="{{ options['global__social'].facebook }}">
+            <svg>
+              <use href="#facebook"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-twitter">
+          <a href="{{ options['global__social'].twitter }}">
+            <svg>
+              <use href="#twitter"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-instagram">
+          <a href="{{ options['global__social'].instagram }}">
+            <svg>
+              <use href="#instagram"/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-linkedin">
+          <a href="{{ options['global__social'].linkedin }}">
+            <svg>
+              <use href="#linkedin"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer__copyright">&copy; {{ 'now' | date('Y') }} {{ options['footer__copyright'] }}</p>
+  {% endif %}
+ </div>
+</div>

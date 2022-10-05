@@ -1,0 +1,70 @@
+//*------------------------------------*\
+//    $CALLTOACTION COMPONENT
+//*------------------------------------*/
+
+.calltoaction {
+    margin-bottom: px-to-rem(36px);
+    @media screen and (min-width: '#{$large-breakpoint}px') {
+        margin-bottom: px-to-rem(110px);
+    }
+
+    .component__content {
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-bottom: px-to-rem(36px);
+            align-items: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        color: map-get($colors, neutrals, black);
+        margin-bottom: px-to-rem(58px);
+        max-width: px-to-rem(340px);
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            max-width: px-to-rem(409px);
+            margin-bottom: 0;
+            margin-right: 96px;
+        }
+
+        &--title {
+            font-family: $Lato;
+            font-weight: map-get($font-weights, boldest);
+            font-size: px-to-rem(32px);
+            line-height: px-to-rem(32px);
+            margin-bottom: px-to-rem(29px);
+            letter-spacing: 0.015em;
+            @media screen and (min-width: '#{$large-breakpoint}px') {
+                font-size: px-to-rem(45px);
+                line-height: px-to-rem(43px);
+            }
+        }
+
+        &--description {
+            color: map-get($colors, neutrals, gray);
+            font-family: $Lato;
+            font-size: px-to-rem(18px);
+            line-height: px-to-rem(30px);
+            margin-bottom: px-to-rem(35px);
+        }
+
+        &--button {
+            color: map-get($colors, neutrals, white);
+            font-family: $Lato;
+            font-weight: map-get($font-weights, boldest );
+            font-size: px-to-rem(20px);
+            line-height: px-to-rem(18px);
+            text-align: center;
+            padding: px-to-rem(17px) px-to-rem(32px);
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            border-radius: px-to-rem(4px);
+        }
+    }
+}

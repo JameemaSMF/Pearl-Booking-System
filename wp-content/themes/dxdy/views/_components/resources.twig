@@ -1,0 +1,28 @@
+{#
+  RESOURCES COMPONENT
+  SASS: /components/resources
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "resources" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = false %}
+{% set background_img = false %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+	<div class="resources-wrapper">
+		<div class="resources__heading" >Resources</div>
+		<div class="resources__list">
+			<ul>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+				<li><a href="#">Downloadable Resource Lorem ipsum dolor sit amet</a></li>
+			</ul>
+		</div>
+	</div>
+{% endblock %}

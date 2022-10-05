@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+        {% for component in post.get_field('landing-page-gallery') %} 
+       
+            {% include '_components/com-gallery.twig' %}
+       
+         {% endfor %}
+   
+{% endblock %}

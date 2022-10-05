@@ -1,0 +1,122 @@
+//*------------------------------------*\
+//    $BUTTON COMPONENT
+//*------------------------------------*/
+
+.component {
+    &__button {
+        background-color: map-get($colors, orange);
+        color: map-get($colors, orange);
+        display: block;
+        overflow: hidden;
+        position: relative;
+
+        .component__button-text {
+            font-family: $Lato;
+        }
+    
+        &::before {
+            background: map-get($colors, lightorange);
+            border-radius: 0 9999px 9999px 0;
+            content: "";
+            display: block;
+            right: 100%;
+            position: absolute;
+            top: 0;
+            transform: translateY(-25%);
+            transition: transform 0.5s linear;
+            height: 200%;
+            width: 110%;
+            z-index: 0;
+            -moz-transition: transform 0.5s linear;
+            -o-transition: transform 0.5s linear;
+            -webkit-transition: transform 0.5s linear;
+        }
+
+        &:hover,
+        &:focus {
+            &::before {
+                transform: translateX(95%) translateY(-25%);
+            }
+        }
+
+        &-text {
+            color: map-get($colors, neutrals, white);
+            display: block;
+            font-size: px-to-rem(19px);
+            font-weight: 800;
+            letter-spacing: px-to-rem(2.75px);
+            line-height: px-to-rem(20px);
+            padding: px-to-rem(14px) px-to-rem(33px);
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            z-index: 1;
+
+            &:hover,
+            &:focus {
+                color: map-get($colors, black);
+                text-decoration: none;
+                transition: color 0.5s ease-in;
+                -moz-transition: color 0.5s ease-in;
+                -o-transition: color 0.5s ease-in;
+                -webkit-transition: color 0.5s ease-in;
+            }
+        }
+
+        &--secondary {
+            background-color: transparent;
+            border: 2px solid map-get($colors, orange);
+            color: map-get($colors, orange);
+
+            .component__button-text {
+                color: map-get($colors, orange);
+                padding-left: px-to-rem(36px);
+                padding-right: px-to-rem(36px);
+            }
+
+            &:hover,
+            &:focus {
+                .component__button-text {
+                    background: transparent;
+                    text-decoration: underline;
+                    -webkit-text-fill-color: inherit;
+                }
+                &::before {
+                    transform: scale(0);
+                    -webkit-transform: scale(0);
+                }
+            }
+        }
+
+        &--primary {
+            .component__button-text {
+                font-size: px-to-rem(22px);
+                line-height: px-to-rem(20px);
+                padding: px-to-rem(25px) px-to-rem(40px);
+            }
+        }
+    }
+}
+
+.button {
+    @include font(20px, 43px, 0.05em);
+    color: map-get($colors, neutrals, white);
+    font-weight: map-get($font-weights, boldest);
+    height: px-to-rem(43px);
+    max-width: px-to-rem(187px);
+    padding: 0;
+    width: 100%;
+
+    &--full {
+        max-width: 100%;
+    }
+
+    &--primary {
+        background-color: map-get($colors, greens, dark);
+    }
+
+    &--secondary {
+        background-color: map-get($colors, red);
+    }
+}

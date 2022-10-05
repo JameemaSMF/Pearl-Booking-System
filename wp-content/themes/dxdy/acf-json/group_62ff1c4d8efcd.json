@@ -1,0 +1,75 @@
+{
+    "key": "group_62ff1c4d8efcd",
+    "title": "Page : Book Now",
+    "fields": [
+        {
+            "key": "field_62ff1ceae1244",
+            "label": "BookNowPage",
+            "name": "booknowpage",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62ff1d034a2af": {
+                    "key": "layout_62ff1d034a2af",
+                    "name": "bookcontent",
+                    "label": "BookContent",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff1d0fe1245",
+                            "label": "content",
+                            "name": "content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62ff1b193ff0d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-bookNow.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1660887375
+}

@@ -1,0 +1,73 @@
+//------------------------------------\
+//    $AIRINGNOW COMPONENT
+//------------------------------------/
+
+.airingnow {
+    margin-bottom: px-to-rem(20px);
+    
+    @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+    }
+
+    .content {
+        @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+        }
+    }
+    &__container{
+        display: flex;
+        margin-bottom: 100px;
+    }
+    &__column{
+        
+        flex: 33.33%;
+        padding: 10px;
+        outline: solid;
+        align-content: center;
+        text-align: center;
+        
+        
+        
+        
+    }
+    &__img {
+        aspect-ratio: 16/9;
+        margin-bottom: px-to-rem(10px);
+        height: 300px;
+        width: 200px;
+    }
+    &__img:hover {
+        transform: scale(1.4);
+        transition: 0.5s;
+        border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    &__title {
+        margin-bottom: px-to-rem(10px);
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 0 !important;
+        font-size:medium;
+        width: 190px;
+        font-size: 11px;
+        text-align: center;
+    }
+    &__b_Ticket{
+        color: white;
+        background-color: black;
+        transition: width 10s, height 10s;
+        opacity: 0.09;
+    }
+    &__b_Ticket:hover{
+        opacity: 1;
+       
+        transition: 1s;
+        
+    }
+    &__header{
+        color:black
+    }    
+        
+}

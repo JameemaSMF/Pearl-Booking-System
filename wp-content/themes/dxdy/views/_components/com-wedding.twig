@@ -1,0 +1,9 @@
+<section class="title-highlighted" style="background-color:{{component['wedding-title-bg']}}">
+    <h1>{{component['wedding-title']}}</h1>
+</section>
+
+{% for option in component['weddingtypes'] %}
+    <h4>{{option.weddingheading}}</h4>
+    <img src = "{{option.weddingimage.url}}" />
+    <h4>{{option.weddingdescription}}</h4>
+{% endfor %}

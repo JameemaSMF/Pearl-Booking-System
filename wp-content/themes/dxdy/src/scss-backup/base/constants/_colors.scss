@@ -1,0 +1,22 @@
+/**
+  COLORS
+  color palette
+**/
+
+$colors: (
+    neutrals: (
+        white: rgba(255,255,255,1),
+        gray: rgba(74, 74, 74, 1),
+        lightgray: rgba(229, 229, 229, 1),
+        black: rgba(47, 47, 47, 1)
+    ),
+    greens: (
+        light: rgba(214, 237, 234, 1),
+        dark: rgba(0, 167, 146, 1)
+    ),
+    red: rgba(238, 81, 71, 1),
+    blue: rgba(89, 130, 195, 1),
+    purple: rgba(167, 183, 221, 1),
+    orange: rgba(247, 147, 17, 1),
+    lighterorange: rgba(255, 213, 128, 1),
+);

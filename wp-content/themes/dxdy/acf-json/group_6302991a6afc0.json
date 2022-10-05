@@ -1,0 +1,75 @@
+{
+    "key": "group_6302991a6afc0",
+    "title": "Page : Seating",
+    "fields": [
+        {
+            "key": "field_630299567fe8d",
+            "label": "seating-page",
+            "name": "seating-page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_630299679f1a2": {
+                    "key": "layout_630299679f1a2",
+                    "name": "seating-page",
+                    "label": "seating-page",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_630299707fe8e",
+                            "label": "seating-page",
+                            "name": "seating-page",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "field_630299567fe8d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "seating.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661114775
+}

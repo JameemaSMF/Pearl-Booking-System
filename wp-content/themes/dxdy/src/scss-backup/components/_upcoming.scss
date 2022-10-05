@@ -1,0 +1,60 @@
+//------------------------------------\
+//    $UPCOMING COMPONENT
+//------------------------------------/
+
+.upcoming {
+    margin-bottom: px-to-rem(20px);
+    
+    @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+    }
+
+    .content {
+        @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+        }
+    }
+    &__container{
+        display: flex;
+    }
+    &__column{
+        outline-color: black;
+        outline: solid;
+        flex: 33.33%;
+        padding: 10px;
+        
+    }
+    &__img {
+        aspect-ratio: 16/9;
+        margin-bottom: px-to-rem(10px);
+        height: 300px;
+        width: 200px;
+    }
+
+    &__title {
+        margin-bottom: px-to-rem(10px);
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 0 !important;
+        font-size:medium;
+    }
+    &__b_Ticket{
+        color: white;
+        background-color: black;
+        transition: width 10s, height 10s;
+        opacity: 0.2;
+    }
+    &__b_Ticket:hover{
+        opacity: 1;
+        width: 100px;
+        height: 50px;
+        transition: 1s;
+        
+    }
+    &__header{
+        color:black
+    }    
+        
+}

@@ -1,0 +1,9 @@
+<section class="title-highlighted" style="background-color:{{component['room-title-bg']}}">
+    <h1>{{component['room-title']}}</h1>
+</section>
+
+{% for option in component['roomtypes'] %}
+    <h4>{{option.roomheading}}</h4>
+    <img src = "{{option.roomimage.url}}" />
+    <h4>{{option.roomdescription}}</h4>
+{% endfor %}

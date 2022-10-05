@@ -1,0 +1,24 @@
+{#
+  CHART COMPONENT
+  SASS: /components/
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "chart" %}
+{% set load_js = 'Charts' %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = false %}
+{% set background_img = false %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <h2 class="chart__title">Most Sold Brands</h2>
+    <canvas id="myChart"></canvas>
+    <div id="legend">
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <p class="chart__source">Source: lorem ipsum dolor sit amet.</p>
+{% endblock %}

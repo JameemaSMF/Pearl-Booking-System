@@ -1,0 +1,171 @@
+//*------------------------------------*\
+//    $FOOTER COMPONENT
+//*------------------------------------*/
+
+.footer {
+    margin: 0;
+    height: auto;
+    background-color: map-get(map-get($colors, neutrals), black);
+    padding: px-to-rem(40px) 0 px-to-rem(40px);
+    color: map-get(map-get($colors, neutrals), white);
+
+    @media screen and (min-width: '#{$large-breakpoint}px') {
+        padding: px-to-rem(30px) 0 px-to-rem(30px);
+    }
+
+    &__top {
+        &-address {
+            .footer__sitesubtitle {
+                margin-top: px-to-rem(16px);
+                font-weight: 700;
+                font-size: px-to-rem(20px);
+                line-height: px-to-rem(32px);
+            }
+            p {
+                font-size: px-to-rem(16px);
+                line-height: px-to-rem(25px);
+            }
+            .footer__copyright{
+                font-size: 13px;
+            }
+        }
+        &-links {
+            .footer__linkstitle {
+                font-weight: 800;
+                font-size: px-to-rem(25px);
+                line-height: px-to-rem(48px);
+            }
+            .footer__menulinks {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    &::before {
+                        width: 1px;
+                        height: 1px;
+                        margin: -1px;
+                        padding: 0;
+                        border: 0;
+                        position: absolute;
+                        clip: rect(0 0 0 0);
+                        overflow: hidden;
+                    }
+                    a {
+                        color: map-get(map-get($colors, neutrals), white);
+                        font-size: px-to-rem(20px);
+                        line-height: px-to-rem(50px);
+                    }
+                }
+            }
+        }
+
+        &-signup {
+            margin-top: px-to-rem(45px);
+
+            p {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 23px;
+            }
+
+            form {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            display: grid;
+            grid-template-columns: [first] 33% auto [last] 33%;
+            &-address {
+                order: 1;
+            }
+
+            &-links {
+                order: 3;
+                .footer__linkstitle {
+                    text-align: right;
+                }
+
+                .footer__menulinks{
+                    li{
+                        justify-content: flex-end;
+                    }
+                }
+            }
+
+            &-signup {
+                margin: 0 auto;
+                order: 2;
+                max-width: px-to-rem(282px);
+            }
+        }
+    }
+
+    &__bottom {
+    
+        &-termsofuse{
+            .footer__description {
+                p {
+                    font-size: px-to-rem(16px);
+                    line-height: px-to-rem(22px);
+
+                }
+            }
+
+            .footer__termsofuse-inner{
+                margin-top: px-to-rem(50px);
+
+                .footer__termsofuse {
+                    a {
+                        color: map-get(map-get($colors, neutrals), white);
+                        font-weight: 700;
+                        font-size: px-to-rem(20px);
+                        line-height: px-to-rem(22px);
+                    }
+                }
+
+               
+            }
+        }
+
+        &-logo {
+            margin-top: px-to-rem(53px);
+
+            .footer__logotext {
+                display: flex;
+                margin-top: px-to-rem(10px);
+                font-size: px-to-rem(12px);
+                line-height: px-to-rem(22px);
+            }
+        }
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            display: flex;
+            justify-content: space-between;
+            margin-top: px-to-rem(125px);
+
+            &-termsofuse {
+                max-width: px-to-rem(895px);
+                .footer__termsofuse-inner {
+                    display: flex;
+
+                    .footer__questions{
+                        margin-top: 0;
+                        margin-left: px-to-rem(28px);
+                    }
+                }
+            }
+
+            &-logo{
+                margin-top: 0;
+
+                .footer__logotext {
+                    font-size: px-to-rem(16px);
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

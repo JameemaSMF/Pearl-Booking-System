@@ -1,0 +1,21 @@
+{#
+  COMPONENT EXAMPLE
+  List dependencies here:
+  JS: /path/to/JS
+  SASS: /path/to/SASS
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "component__name" %}
+{% set custom_classes = false %}
+{% set custom_attributes = false %}
+{% set load_js = "ComponentName" %}
+{% set background = true %}
+{% set background_img = "/path/to/image.png" %}
+{% set scroll_animation = true %}
+
+{# component background content markup goes here - e.g. if we need to embed a video - if it's an image use the background_img param above -if not, delete this block  #}
+{% block component_background_content %} {{% endblock %}}
+
+{# component markup goes here #}
+{% block component_content %}{% endblock %}

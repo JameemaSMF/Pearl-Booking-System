@@ -1,0 +1,75 @@
+{
+    "key": "group_62ff401abfbda",
+    "title": "Page: Login-page",
+    "fields": [
+        {
+            "key": "field_62ff403320717",
+            "label": "login-page",
+            "name": "login-page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62ff4042e0da9": {
+                    "key": "layout_62ff4042e0da9",
+                    "name": "login-page",
+                    "label": "login-page",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff404d20718",
+                            "label": "login-page",
+                            "name": "login-page",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62ff3f2db2f1a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "login.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1660895415
+}

@@ -1,0 +1,16 @@
+{#
+  HIGHLIGHTED TEXT COMPONENT
+  SASS: /components/highlightedtext
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "highlightedtext" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = true %}
+{% set background_img = theme.link ~ '/src/images/Rectangle.png' %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <h2 class="highlightedtext__title">Highlighted or featured text goes here. It can be up to 5 lines of text on desktop. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+{% endblock %}

@@ -1,0 +1,99 @@
+/**
+* Utility classes
+*/
+/**
+* Wordpress image alignment
+*/
+.alignright {
+  float: none;
+}
+@media screen and (min-width: {$sm-breakpoint}) {
+  .alignright {
+    float: right;
+  }
+}
+
+.alignleft {
+  float: none;
+}
+@media screen and (min-width: {$sm-breakpoint}) {
+  .alignleft {
+    float: left;
+  }
+}
+
+.aligncenter {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/**
+  BREAKPOINTS
+  breakpoint constants
+**/
+/**
+  COLORS
+  color palette
+**/
+.header {
+  background-color: #FFFFFF;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  transition: 1s ease;
+  width: 100%;
+  z-index: 10;
+}
+.header.active {
+  height: 100%;
+}
+.header.scroll {
+  height: 110px;
+}
+.header__nav {
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  background-color: #6941C2;
+  border-right: 1px solid #5025AF;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header__submenu {
+  opacity: 0;
+  position: relative;
+  top: 20px;
+  transition: all 0.5s ease;
+  visibility: hidden;
+}
+.header__navigation--children {
+  background-color: #39A6E0;
+  box-shadow: 0px 11px 66.5px 3.5px rgba(0, 0, 0, 0.16);
+  border-radius: 50px 0;
+  display: flex;
+  height: auto;
+  left: -25px;
+  position: absolute;
+  width: max-content;
+  z-index: -1;
+}
+.header__navigation-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 30px;
+}
+.header__navigation-wrap-item {
+  border-bottom: 1px solid #E4E5E9;
+}
+
+.footer__col footer__col--left {
+  padding: 70px 0;
+}
+
+.footer__col footer__col--center {
+  padding: 210px 0;
+}
+/*# sourceMappingURL=maps/style.css.map */

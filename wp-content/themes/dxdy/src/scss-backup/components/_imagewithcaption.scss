@@ -1,0 +1,32 @@
+//*------------------------------------*\
+//    $STATCARDS COMPONENT
+//*------------------------------------*/
+
+.imagewithcaption {
+    .component__content {
+        margin-bottom: px-to-rem(30px);
+    }
+
+    &__content {
+        @media screen and (min-width: '#{$small-breakpoint}px') {
+            max-width: px-to-rem(922px);
+        }
+
+        &--image {
+            width: 100%;
+            border-radius: px-to-rem(4px);
+        }
+
+        &--caption {
+            display: none;
+            @media screen and (min-width: '#{$large-breakpoint}px') {
+                margin: 0 px-to-rem(4px) 0 px-to-rem(4px);
+                display: block;
+                font-family: $Lato;
+                font-size: px-to-rem(16px);
+                line-height: px-to-rem(26.4px);
+                color: map-get($colors, neutrals, gray);
+            }
+        }
+    }
+}

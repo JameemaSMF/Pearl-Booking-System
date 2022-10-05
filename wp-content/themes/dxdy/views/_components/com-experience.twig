@@ -1,0 +1,9 @@
+<section class="title-highlighted" style="background-color:{{component['experience-title-bg']}}">
+    <h1>{{component['experience-title']}}</h1>
+</section>
+
+{% for option in component['experiencetypes'] %}
+    <h4>{{option.experienceheading}}</h4>
+    <img src = "{{option.experienceimage.url}}" />
+    <h4>{{option.experiencedescription}}</h4>
+{% endfor %}

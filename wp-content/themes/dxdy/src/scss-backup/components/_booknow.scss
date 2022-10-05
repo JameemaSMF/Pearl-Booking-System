@@ -1,0 +1,70 @@
+//*------------------------------------*\
+//    $BOOKNOW COMPONENT
+//*------------------------------------*/
+
+.book-now {
+    
+
+    &__img {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 80%;
+
+    }
+    &__title{
+        position: relative;
+        font:white;
+    }
+
+    &__name {
+        margin: auto;
+        width: 80%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__description{
+        margin: auto;
+        width: 80%;
+    }
+
+    &__timeslots {
+        padding-top: 3rem;
+        margin: auto;
+        width: 80%;
+    }
+
+    &__divider {
+        height: 1rem;
+        background-color: black;
+        border: none;
+    }
+
+    &__button {
+        width: 4rem;
+    }
+
+    &__table {
+        margin: auto;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        width: 80%;
+
+        th,
+        td {
+            text-align: center;
+            padding: 1px;
+        }
+
+        button {
+            color: white;
+            background-color: black;
+        }
+
+    }
+
+}

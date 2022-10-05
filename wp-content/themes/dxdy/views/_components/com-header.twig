@@ -1,0 +1,26 @@
+<div class="header">
+    <header class="header">
+        <ul class="header__nav">
+            {% block header %}
+                {% for item in nav_menu.get_items %}
+                    <li>
+                    <a href="{{ item.link }}">{{ item.title }}</a>
+                    <div class="header__submenu">
+                        {% if item.get_children %}
+                        <ul class="header__navigation--children">
+                        <div class="header__navigation-wrap {{ item.get_children|length > 10 ? 'columns-two' : '' }}">
+                        {% for child in item.get_children %}
+                            <li class="header__navigation-wrap-item {{ child.class }}"><a href="{{ child.link }}">{{ child.title }}</a></li>
+                        {% endfor %}
+                            </div>
+                        </ul>
+                        {% endif %}
+                    </div>
+                    </li>
+                {% endfor %}
+            {% endblock %}
+        </ul>
+        </div>
+    </div>
+    </header>
+</div>

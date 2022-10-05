@@ -1,0 +1,75 @@
+{
+    "key": "group_630332bb8af93",
+    "title": "Page: Advertise Page",
+    "fields": [
+        {
+            "key": "field_630332d7dc926",
+            "label": "Advertise page",
+            "name": "advertise_page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_630332e83c019": {
+                    "key": "layout_630332e83c019",
+                    "name": "advertise_page",
+                    "label": "Advertise page",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_630332f3dc927",
+                            "label": "Advertise page",
+                            "name": "advertise_page",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6303324cb5a76"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "advertise.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661154100
+}

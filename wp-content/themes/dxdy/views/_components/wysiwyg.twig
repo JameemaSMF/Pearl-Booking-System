@@ -1,0 +1,32 @@
+{#
+  WYSIWYG COMPONENT
+  SASS: /constants/typographic
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "wysiwyg" %}
+{% set load_js = false %}
+{% set background = false %}
+{% set background_img = false %}
+
+{% block component_content %}
+    <h4>Optional Title Area for an Unordered List Goes Here (H4)</h4>
+    <ul>
+        <li>Lorem ipsum dolor sit amet eiusmod tempor incididunt</li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit  amet eiusmod esse</li>
+        <li>Lorem dolor amet eiusmod tempor incididunt</li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse amet eiusmod tempor incididunt</li>
+        <li>Lorem ipsum dolor sit amet tempor incididunt</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h4>Optional Title Area for an Ordered List Goes Here (H4)</h4>
+    <ol>
+        <li>Lorem ipsum dolor sit amet eiusmod tempor incididunt</li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit  amet eiusmod esse</li>
+        <li>Lorem dolor amet eiusmod tempor incididunt</li>
+        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse amet eiusmod tempor incididunt</li>
+        <li>Lorem ipsum dolor sit amet tempor incididunt</li>
+    </ol>
+{% endblock%}

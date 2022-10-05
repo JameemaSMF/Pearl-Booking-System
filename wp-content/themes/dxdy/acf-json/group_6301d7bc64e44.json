@@ -1,0 +1,75 @@
+{
+    "key": "group_6301d7bc64e44",
+    "title": "Page: Upcoming",
+    "fields": [
+        {
+            "key": "field_6301d7c84a1ce",
+            "label": "Upcoming-Page",
+            "name": "upcoming-page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_6301d7d8104c1": {
+                    "key": "layout_6301d7d8104c1",
+                    "name": "upcoming-content",
+                    "label": "upComing-content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6301ddd5526e5",
+                            "label": "content",
+                            "name": "content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6301d6a0ef5e6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-upcoming.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661067322
+}

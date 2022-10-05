@@ -1,0 +1,35 @@
+{#
+  LOCATION COMPONENT
+  SASS: /components/location
+#}
+{% set component_name = 'location' %}
+{% block component_content %}
+  <div>
+    <div >
+      <img  class="location__image" src=" {{ component['location-image']['url'] }}" alt="" />
+    </div>
+    <div class="location__content">
+      <h2 class="location__content--heading">{{ component['location-name'] }}</h2>
+      <p class="location__content--description">{{ component['location-number'] }}</p>
+      <p class="location__content--description">{{ component['location-details'] }}</p>
+      <a  target="_blank" href="https://www.google.com/search?q=ccc&oq=ccc&aqs=chrome..69i57j69i59.1869j0j1&sourceid=chrome&ie=UTF-8&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=9740883997755824002&lqi=CgNjY2NI8-2_8rWsgIAIWgkQABgAIgNjY2OSAQ9zaG9wcGluZ19jZW50ZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVTk5OR042UlRKQlJSQUKqAQsQASoHIgNjY2MoAA&ved=2ahUKEwjT382g2-P5AhWN2DgGHRAFBSEQvS56BAgFEAE&sa=X&rlst=f#" class="location__content--button">Get Location</a>
+      {# <pre>{{component['location-image'] | print_r}}</pre> #}
+    </div>
+  </div>
+   <div>
+    <div >
+      <img  class="location__image" src=" {{ component['location2-image']['url'] }}" alt="" />
+    </div>
+    <div class="location__content">
+      <h2 class="location__content--heading">{{ component['location2-name'] }}</h2>
+      <p class="location__content--description">{{ component['location2-number'] }}</p>
+      <p class="location__content--description">{{ component['location3-details'] }}</p>
+      <a href="https://www.google.com/search?q=majestic+city&tbm=lcl&ei=71EIY6DoGeaF4-EP6rSviAI&oq=majes&gs_l=psy-ab.1.1.0i433i131i67k1l2j0i67k1j0i512i457k1j0i512i433i131k1j0i512k1l5.28643.31334.0.32961.8.7.0.1.1.0.116.591.4j2.7.0....0...1c.1.64.psy-ab..0.7.598.0..0i433i131k1j0i273k1j0i433i131i10i67k1j0i3k1j0i512i433k1.84.K5um8cQ-tFA#" class="location__content--button">Get Location</a>
+       <p  target="_blank" class="location__content--description" style = "font-size: 12px;">**Please note this location is still under construction </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+  </div>
+{% endblock %}

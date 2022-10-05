@@ -1,0 +1,37 @@
+{#
+  SOCIAL SHARE COMPONENT
+  SASS: /components/socialshare
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "socialshare" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = true %}
+{% set background_img = false %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+	{% if social_share.copy %}
+		<h3 class="socialshare__copy">{{social_share.copy}}</h3>
+	{% endif %}
+	<ul class="socialshare__buttons" data-loadcomponent="SocialShare">
+		{% if social_share.twitter %}
+			<li class="socialshare__buttons-item">
+				<a href="https://www.twitter.com" class="share--tw component__button" data-hashtags="{{social_share.twitter.twitter_hashtags}}">
+					<span class="component__button-text">{{social_share.twitter.twitter_title}}</span>
+				</a>
+			</li>
+		{% endif %}
+		{% if social_share.linkedin %}
+			<li class="socialshare__buttons-item">
+				<a href="https://www.linkedin.com" class="share--li component__button">
+					<span class="component__button-text">{{social_share.linkedin.linkedin_title}}</span>
+				</a>
+			</li>
+		{% endif %}
+	</ul>
+{% endblock %}
+{# {% block component_buttons %}
+	{% include "buttons.twig" %}
+{% endblock %} #}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: PostModel</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="APIResults.html">APIResults</a></li><li><a href="AuthorsModel.html">AuthorsModel</a></li><li><a href="Controller.html">Controller</a></li><li><a href="EyebrowModel.html">EyebrowModel</a></li><li><a href="FeaturedMediaModel.html">FeaturedMediaModel</a></li><li><a href="LoadMore.html">LoadMore</a></li><li><a href="LoadPostsController.html">LoadPostsController</a></li><li><a href="MessageBus.html">MessageBus</a></li><li><a href="module.exports.html">module.exports</a></li><li><a href="module.exports_module.exports.html">module.exports#module.exports</a></li><li><a href="NoPosts.html">NoPosts</a></li><li><a href="PostModel.html">PostModel</a></li><li><a href="SocialShare.html">SocialShare</a></li><li><a href="TermModel.html">TermModel</a></li><li><a href="TermsModel.html">TermsModel</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#addCallback">addCallback</a></li><li><a href="global.html#appendAPIResults">appendAPIResults</a></li><li><a href="global.html#cacheDomReferences">cacheDomReferences</a></li><li><a href="global.html#calculatePages">calculatePages</a></li><li><a href="global.html#closeDropdown">closeDropdown</a></li><li><a href="global.html#closeDropdownFromOutside">closeDropdownFromOutside</a></li><li><a href="global.html#closest">closest</a></li><li><a href="global.html#convertdate">convertdate</a></li><li><a href="global.html#createloader">createloader</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#decodehtml">decodehtml</a></li><li><a href="global.html#emailShare">emailShare</a></li><li><a href="global.html#enable">enable</a></li><li><a href="global.html#facebookShare">facebookShare</a></li><li><a href="global.html#fromJSON">fromJSON</a></li><li><a href="global.html#getcookie">getcookie</a></li><li><a href="global.html#getOGData">getOGData</a></li><li><a href="global.html#hashover">hashover</a></li><li><a href="global.html#hextorgb">hextorgb</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#interpolatenumbers">interpolatenumbers</a></li><li><a href="global.html#isie">isie</a></li><li><a href="global.html#isobjectempty">isobjectempty</a></li><li><a href="global.html#isscrolledintoview">isscrolledintoview</a></li><li><a href="global.html#linkedinShare">linkedinShare</a></li><li><a href="global.html#loadItems">loadItems</a></li><li><a href="global.html#loadMorePosts">loadMorePosts</a></li><li><a href="global.html#loadPagecomponents">loadPagecomponents</a></li><li><a href="global.html#onRequestMade">onRequestMade</a></li><li><a href="global.html#onResize">onResize</a></li><li><a href="global.html#onScroll">onScroll</a></li><li><a href="global.html#onUpdateResponse">onUpdateResponse</a></li><li><a href="global.html#openDropdown">openDropdown</a></li><li><a href="global.html#openpopup">openpopup</a></li><li><a href="global.html#removeCallback">removeCallback</a></li><li><a href="global.html#removeloader">removeloader</a></li><li><a href="global.html#request">request</a></li><li><a href="global.html#requestMade">requestMade</a></li><li><a href="global.html#resultsReturned">resultsReturned</a></li><li><a href="global.html#setcookie">setcookie</a></li><li><a href="global.html#setupHandlers">setupHandlers</a></li><li><a href="global.html#showHide">showHide</a></li><li><a href="global.html#toggleDropdown">toggleDropdown</a></li><li><a href="global.html#toJSON">toJSON</a></li><li><a href="global.html#twitterShare">twitterShare</a></li><li><a href="global.html#updateModules">updateModules</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: PostModel</h1>
+<section>
+
+<header>
+    
+        <h2>
+        PostModel
+        </h2>
+        
+            <div class="class-description"><p>PostModel</p>
+<p>Model for a Term returned as part of Terms-&gt;Posts returned from WP API</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="PostModel"><span class="type-signature"></span>new PostModel(post, posttype)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Constructor for the PostModel class</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>post</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An object of data to transform and model</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>posttype</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the type of post we're loading</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a>
+	
+		on December 14th 2021, 12:28:26 pm
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+        {% for component in post.get_field('landing-page-beachclub') %} 
+       
+            {% include '_components/com-beachclub.twig' %}
+       
+         {% endfor %}
+   
+{% endblock %}

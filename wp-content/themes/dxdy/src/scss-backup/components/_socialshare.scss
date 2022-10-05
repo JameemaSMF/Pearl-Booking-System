@@ -1,0 +1,54 @@
+.socialshare {
+    max-width: 1440px;
+
+    .socialshare__copy {
+        color: map-get($colors, darkgreen);
+        font-size: px-to-rem(17px);
+        font-weight: 700;
+        margin-bottom: px-to-rem(24px);
+        max-width: 685px;
+        flex-basis: 53%;
+    }
+
+    .socialshare__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 500px;
+        flex-basis: 40%;
+    }
+
+    .socialshare__buttons-item {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .component__button {
+        // margin-right: px-to-rem(15px);
+        margin-bottom: px-to-rem(6px);
+        min-width:px-to-rem(210px);
+    }
+
+    @media screen and (min-width: '#{$medium-breakpoint}px') {
+        .component__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .socialshare__buttons {
+            flex-direction: row;
+        }
+
+        .socialshare__copy {
+            font-size: px-to-rem(21px);
+            line-height: px-to-rem(28px);
+            margin-bottom: 0;
+        }
+
+        .component__button {
+            margin-bottom: px-to-rem(15px);
+            min-width: unset;
+        }
+    }
+}

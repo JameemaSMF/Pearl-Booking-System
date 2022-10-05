@@ -1,0 +1,75 @@
+{
+    "key": "group_62ff1f6d080e9",
+    "title": "Page: Signup-page",
+    "fields": [
+        {
+            "key": "field_62ff1f840dbcd",
+            "label": "signup-page",
+            "name": "signup-page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_62ff1fa08cdab": {
+                    "key": "layout_62ff1fa08cdab",
+                    "name": "signup-page",
+                    "label": "signup-page",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62ff1faf0dbce",
+                            "label": "signup-page",
+                            "name": "signup-page",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_62ff1e5eefd96"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "signup.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1660887029
+}

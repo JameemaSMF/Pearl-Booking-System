@@ -1,0 +1,22 @@
+{#
+  SIMPLE CARD COMPONENT
+  SASS: /components/simplecards
+#}
+{% set FeaturedPost = Post(card['simple_card__select_page']) %}
+{% set FeaturedImage = function('FeaturedImage', FeaturedPost.id, 'simplecard' ) %}
+{% set card_heading = FeaturedPost.meta('simple_card_heading') %}
+
+{% if (FeaturedImage) %}
+	<figure class="simplecard">
+		<span class="card-overlay card-link" data-url="{{ FeaturedPost.link }}"></span>
+		{# Adding card-overlay with trigger event link unless there alot style complication happening #}
+		<a href="{{ FeaturedPost.link }}">
+			<img src="{{ FeaturedImage }}" alt=""/>
+		</a>
+		<figcaption class="simplecard__caption">
+			<p class="simplecard__title"> {{ card_heading }}
+			</p>
+			<a class="simplecard__link" href="{{ FeaturedPost.link }}">{{ _context.card__button_label }}</a>
+		</figcaption>
+	</figure>
+{%  endif %}

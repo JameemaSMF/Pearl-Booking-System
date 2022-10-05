@@ -1,0 +1,46 @@
+//*------------------------------------*\
+//    $QUOTE COMPONENT
+//*------------------------------------*/
+
+.quote {
+    margin-bottom: px-to-rem(54px);
+
+    .component__background {
+        background-color: map-get($colors, purple);
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            background-position: 0%;
+            max-width: px-to-rem(1050px);
+            border-top-right-radius: px-to-rem(200px);
+            border-bottom-right-radius: px-to-rem(200px);
+        }
+    }
+
+    .component__content {
+        margin: 0;
+        padding: px-to-rem(49px) px-to-rem(30px) px-to-rem(44px) px-to-rem(28px);
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            padding: px-to-rem(48px) 0 px-to-rem(50px) px-to-rem(123px);
+            max-width: px-to-rem(753px);
+        }
+    }
+
+    &__blockquote {
+        font-family: $Lato;
+        font-size: px-to-rem(20px);
+        line-height: px-to-rem(33px);
+        margin-bottom: px-to-rem(34px);
+        color: map-get($colors, neutrals, black);
+    }
+
+    &__title, &__snippet {
+        font-size: px-to-rem(18px);
+        line-height: px-to-rem(30px);
+    }
+
+    &__title {
+        font-family: $Lato;
+        font-weight: map-get($font-weights, bolder);
+    }
+}

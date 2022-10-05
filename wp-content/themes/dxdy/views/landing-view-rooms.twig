@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+        {% for component in post.get_field('landing-page-rooms') %} 
+       
+            {% include '_components/com-rooms.twig' %}
+       
+         {% endfor %}
+   
+{% endblock %}

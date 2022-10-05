@@ -1,0 +1,50 @@
+//------------------------------------\
+//    $LOCATION COMPONENT
+//------------------------------------/
+
+.location {
+
+
+    margin-bottom: px-to-rem(20px);
+
+    @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+    }
+
+    &__content {
+        
+        row-gap: px-to-rem(30px);
+        margin-top: 100px;
+        margin-bottom: 200px;
+        height: 250px;
+
+        @media screen and (min-width: '#{$small-breakpoint}px') {
+            //grid-template-columns: repeat(2, 1fr);
+            column-gap: px-to-rem(30px);
+            row-gap: px-to-rem(30px);
+        }
+
+        &--heading{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        &--description {
+            font-size: px-to-rem(20px);
+        }
+        &--button {
+            font-size:20px;
+            background-color: rgb(190, 189, 189);
+            padding :7.5px;
+        }
+
+    }
+    &__image {
+        width: 450px;
+        height: 450px;
+        float: right;    
+        display:inline;
+          
+    }
+  
+
+}

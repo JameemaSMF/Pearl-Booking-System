@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+        {% for component in post.get_field('landing-page-offers') %} 
+       
+            {% include '_components/com-offers.twig' %}
+       
+         {% endfor %}
+   
+{% endblock %}

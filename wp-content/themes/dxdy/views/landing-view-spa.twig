@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+{% block content %}
+
+        {% for component in post.get_field('landing-page-spa') %} 
+       
+            {% include '_components/com-spa.twig' %}
+       
+         {% endfor %}
+   
+{% endblock %}

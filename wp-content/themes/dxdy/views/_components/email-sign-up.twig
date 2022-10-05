@@ -1,0 +1,23 @@
+{#
+  STAT CARDS COMPONENT
+  SASS: /components/emailsignup
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "emailsignup" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = true %}
+{% set background_img = "/path/to/image.png" %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <h2 class="emailsignup__description">Email sign up text goes here.</h2>
+    <form class="emailsignup__form">
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="submit" value="Sign Up">
+    </form>
+{% endblock %}

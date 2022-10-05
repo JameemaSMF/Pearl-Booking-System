@@ -1,0 +1,37 @@
+{#
+  SEATING COMPONENT
+  SASS: /components/Seating.scss
+#}
+
+{% set component_name = 'seating' %}
+{% block content %}
+
+
+ <h3><p><b>Hall Rose <b> <p><h3>
+
+ <label for="Locations">Location :</label>
+
+<select name="Locations" id="locate">
+  <option value="galle">Galle</option>
+  <option value="colombo">Colombo</option>
+  <option value="kandy">Kandy</option>
+
+</select>
+
+ <label for="date">Date :</label>
+
+<input type="date" id="date">
+<label for="adult seats"> Adult Seats :</label>
+<input type="Number">
+<label for="Child seats">Child seats :</label>
+<input type="Number">
+
+{% filter shortcodes %}
+ [seatreg code=01f5dbf660 height=600]
+{% endfilter %}  
+<br>
+
+ <div class="seating__confirm">
+ <a href="/Group%20B/index.php/tickets/">Confirm seat</a>
+ </div>
+{% endblock %}  

@@ -1,0 +1,75 @@
+{
+    "key": "group_63012874c068b",
+    "title": "Page: AiringNow",
+    "fields": [
+        {
+            "key": "field_6301287d3fe98",
+            "label": "AiringNow-page",
+            "name": "airingnow-page",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_63012887e5803": {
+                    "key": "layout_63012887e5803",
+                    "name": "airingNow-content",
+                    "label": "airingNow-Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_630128963fe99",
+                            "label": "content",
+                            "name": "content",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63012555d667b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-AiringNow.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661116833
+}

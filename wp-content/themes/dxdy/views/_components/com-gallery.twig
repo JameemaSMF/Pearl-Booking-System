@@ -1,0 +1,14 @@
+<section class="title-highlighted" style="background-color:{{component['gallery-title-bg']}}">
+    <h1>{{component['gallery-title']}}</h1>
+</section>
+
+{% for option in component['gallerytypes'] %}
+    <h4>{{option.galleryheading}}</h4>
+    <img src = "{{option.galleryimage.url}}" />
+    <h4>{{option.gallerydescription}}</h4>
+{% endfor %}
+
+{# <img src = "{{component['gallery']}}" /> #}
+{% for image in post.meta('gallery') %}
+    <img src="{{ Image(image) }}" />
+{% endfor %}

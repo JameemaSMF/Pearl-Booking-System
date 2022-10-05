@@ -1,0 +1,9 @@
+<section class="title-highlighted" style="background-color:{{component['spa-title-bg']}}">
+    <h1>{{component['spa-title']}}</h1>
+</section>
+
+{% for option in component['spatypes'] %}
+    <h4>{{option.spaheading}}</h4>
+    <img src = "{{option.spaimage.url}}" />
+    <h4>{{option.spadescription}}</h4>
+{% endfor %}

@@ -1,0 +1,46 @@
+{#
+  COUNTRYHERO COMPONENT
+  SASS: /components/countryhero
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "countryhero" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = false %}
+{% set background_img = false %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+	{% include '_components/information-panel.twig'%}
+	<div class="countryhero-wrapper">
+		<div class="countryhero__heading">
+			<div class="countryhero__heading-text" >
+				<h1 class="heading-title">Venezuela</h1>
+				<div class="heading-desc" >
+					<p>Venezuela has hit the tobacco price tipping point. Taxes across the board are lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet. </p>
+				</div>
+			</div>
+			<div class="countryhero__heading-flag">
+				<img src="{{ theme.link ~ '/src/images/Venezuela.png' }}" >
+			</div>
+		</div>
+		<div class="countryhero__information" >
+			<div class="countryhero__information-info">
+				<span class="info-title">Target Price</span>
+				<div class="info-local-price">23.00 CAD</div>
+				<div class="info-intl-price">12.50 International</div>
+			</div>
+			<div class="countryhero__information-info">
+				<span class="info-title">Average Total Price</span>
+				<div class="info-local-price">15.00 CAD</div>
+				<div class="info-intl-price">9.50 International</div>
+			</div>
+			<div class="countryhero__information-info">
+				<span class="info-title">Affordability Rating</span>
+				<div class="info-description">Cigarettes are becoming too affordable in Canada.</div>
+			</div>
+		</div>
+		<div class="countryhero__source" >Source: lorem ipsum dolor sit amet.</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+<section class="title-highlighted" style="background-color:{{component['beachclub-title-bg']}}">
+    <h1>{{component['beachclub-title']}}</h1>
+</section>
+
+{% for option in component['beachclubtypes'] %}
+    <h4>{{option.beachclubheading}}</h4>
+    <img src = "{{option.beachclubimage.url}}" />
+    <h4>{{option.beachclubdescription}}</h4>
+{% endfor %}

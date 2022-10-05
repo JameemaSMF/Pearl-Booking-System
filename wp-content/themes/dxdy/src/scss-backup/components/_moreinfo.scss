@@ -1,0 +1,48 @@
+//*------------------------------------*\
+//    $MOREINFO COMPONENT
+//*------------------------------------*/
+
+.more-info {
+
+    &__img {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+    }
+
+    &__divider {
+        height: 1rem;
+        background-color: black;
+        border: none;
+    }
+    
+    &__title{
+        position: relative;
+        font:white;
+    }
+
+    &__name {
+        margin: auto;
+        width: 80%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: large;
+    }
+    &__font{
+        font-size: large;
+    }
+
+    &__description{
+        margin: auto;
+        width: 80%;
+    }
+
+    &__coming-soon{
+        margin: auto;
+        width: 80%;
+    }
+
+}

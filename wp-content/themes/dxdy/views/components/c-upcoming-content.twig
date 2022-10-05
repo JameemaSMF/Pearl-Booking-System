@@ -1,0 +1,55 @@
+{#
+  UPCOMING COMPONENT
+  SASS: /components/upcoming.scss
+#}
+
+{% block content %}
+{% set component_name = 'upcoming' %}
+
+<br>
+<h1> UPCOMING </h1>
+   <div class="upcoming__container">
+        <div class="upcoming__column">
+            <img class="upcoming__img" src="{{ component['Umovie-img1']}}
+            <h4 class="upcoming__title">{{ component['Umovie-txt1']}}</h4>
+            
+            <button type="button" class="upcoming__b_Ticket" id="button1">More info</button>
+        </div>
+        <div class="upcoming__column">
+            <img class="upcoming__img" src="{{ component['movie-img2']}} 
+            <h4 class="upcoming__title">{{ component['movie-txt2']}}</h4>
+            
+            <button type="button" class="upcoming__b_Ticket" id="button2">More info</button>
+        </div>
+        <div class="upcoming__column">
+            <img class="upcoming__img" src=" {{ component['movie-img3']}} 
+            <h4 class="upcoming__title">{{ component['movie-txt3']}}</h4>
+            <p class="upcoming__text">Lorem ipsum do. Morbi a dictum lacus.</p>
+            <button type="button" class="upcoming__b_Ticket" id="button3">More info</button>
+        </div>
+        <div class="upcoming__column">
+            <img class="upcoming__img" src="{{ component['movie-img4']}} 
+            <h4 class="upcoming__title">{{ component['movie-txt4']}}</h4>
+            <p class="upcoming__text">Lorem ipsum doie congue. Morbi a dictum lacus.</p>
+            <button type="button" class="upcoming__b_Ticket" id="button4">More info</button>
+        </div>
+        <div class="upcoming__column">
+            <img class="upcoming__img" src="{{ component['movie-img4']}} 
+            <h4 class="upcoming__title">{{ component['movie-txt4']}}</h4>
+            <p class="upcoming__text">Lorem ipsum doie congue. Morbi a dictum lacus.</p>
+            <button type="button" class="upcoming__b_Ticket" id="button5">More info</button>
+        </div>
+        <div class="upcoming__column">
+            <img class="upcoming__img" src="{{ component['movie-img4']}}
+            <h4 class="upcoming__title">{{ component['movie-txt4']}}</h4>
+            <p class="upcoming__text">Lorem ipsum doie congue. Morbi a dictum lacus.</p>
+            <button type="button" class="upcoming__b_Ticket" id="button6">More info</button>
+        </div>
+    </div>
+    <br>
+    <br>
+   
+
+  
+  
+{% endblock %}

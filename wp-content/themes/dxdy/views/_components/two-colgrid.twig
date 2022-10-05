@@ -1,0 +1,25 @@
+{#
+  TWO COLUMN GRID COMPONENT
+  SASS: /components/twocolgrid
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "two-colgrid" %}
+{% set load_js = false %}
+{% set custom_attributes = false %}
+{% set background = false %}
+{% set background_img = theme.link ~ '/images/call-to-action.png' %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <div class="two-colgrid__column">
+        <img class="two-colgrid__img" src="{{ background_img }}" alt="">
+        <h3 class="two-colgrid__title">Grid column title</h3>
+        <p class="two-colgrid__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis tellus eget molestie congue. Morbi a dictum lacus.</p>
+    </div>
+    <div class="two-colgrid__column">
+        <img class="two-colgrid__img" src="{{ background_img }}" alt="">
+        <h3 class="two-colgrid__title">Grid column title</h3>
+        <p class="two-colgrid__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis tellus eget molestie congue. Morbi a dictum lacus.</p>
+    </div>
+{% endblock %}

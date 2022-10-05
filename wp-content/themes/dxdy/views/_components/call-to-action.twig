@@ -1,0 +1,23 @@
+{#
+  CALL TO ACTION COMPONENT
+  SASS: /components/calltoaction
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "calltoaction" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = false %}
+{% set background_img = theme.link ~ '/images/call-to-action.png' %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <div class="calltoaction__content" >
+        <div class="calltoaction__content--title">CTA Headline text goes here.</div>
+        <div class="calltoaction__content--description">Optional secondary text goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <a href="#" class="calltoaction__content--button button--primary">Call to Action</a>
+    </div>
+    <div class="calltoaction__image">
+        <img src="{{ background_img }}" alt="">
+    </div>
+{% endblock %}

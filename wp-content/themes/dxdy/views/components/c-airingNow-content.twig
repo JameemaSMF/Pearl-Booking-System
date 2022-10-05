@@ -1,0 +1,106 @@
+{#
+  AIRINGNOW COMPONENT
+  SASS: /components/airingnow.scss
+#}
+
+{% block content %}
+{% set component_name = 'airingnow' %}
+
+<br>
+<h1> AIRING NOW </h1>
+   <div class="airingnow__container">
+        <div class="airingnow__column">
+            <img class="airingnow__img" alt-text="First poster" src="{{ component['movie-img1']}}
+            <h4 class="airingnow__title">{{ component['movie-txt1']}}</h4>
+            <p class="airingnow__text">{{ component['movie-desc1']}}</p>
+            <a href="/book-now/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['movie-img2']}} 
+            <h4 class="airingnow__title">{{ component['movie-txt2']}}</h4>
+            <p class="airingnow__text">{{ component['movie-desc2']}}</p>
+            <a href="/booknow1/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src=" {{ component['movie-img3']}} 
+            <h4 class="airingnow__title">{{ component['movie-txt3']}}</h4>
+           <p class="airingnow__text">{{ component['movie-desc3']}}</p>
+            <a href="/booknow2/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['movie-img4']}} 
+            <h4 class="airingnow__title">{{ component['movie-txt4']}}</h4>
+            <p class="airingnow__text">{{ component['movie-desc4']}}</p>
+            <a href="/booknow3/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['movie-img5']}} 
+            <h4 class="airingnow__title">{{ component['movie-txt5']}}</h4>
+            <p class="airingnow__text">{{ component['movie-desc5']}}</p>
+             <a href="/booknow4/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['movie-img6']}}
+            <h4 class="airingnow__title">{{ component['movie-txt6']}}</h4>
+           <p class="airingnow__text">{{ component['movie-desc6']}}</p>
+            <a href="/booknow5/">
+            <button type="button" class="airingnow__b_Ticket" id="button1" >Book Now</button>
+            </a>
+        </div>
+        
+    </div>
+    
+    <h1> UPCOMING </h1>
+   <div class="airingnow__container">
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['Umovie-img1']}}
+            <h4 class="airingnow__title">{{ component['Umovie-txt1']}}</h4>  
+            <p class="airingnow__text"></p>   
+            <button type="button" class="airingnow__b_Ticket" id="button1"><a href="/more-info/">More info</button></a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['Umovie-img2']}} 
+            <h4 class="airingnow__title">{{ component['Umovie-txt2']}}</h4>
+            <p class="airingnow__text"></p>
+            <button type="button" class="airingnow__b_Ticket" id="button2"><a href="/more-info-2/">More info</button></a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src=" {{ component['Umovie-img3']}} 
+            <h4 class="airingnow__title">{{ component['Umovie-txt3']}}</h4>
+            <p class="airingnow__text"></p>
+            <button type="button" class="airingnow__b_Ticket" id="button3"><a href="/more-info-3/">More info</button></a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['Umovie-img4']}} 
+            <h4 class="airingnow__title">{{ component['Umovie-txt4']}}</h4>
+            <p class="airingnow__text"></p>
+            <button type="button" class="airingnow__b_Ticket" id="button4"><a href="/more-info-4/">More info</button></a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['Umovie-img5']}} 
+            <h4 class="airingnow__title">{{ component['Umovie-txt5']}}</h4>
+            <p class="airingnow__text"></p>
+            <button type="button" class="airingnow__b_Ticket" id="button5"><a href="/more-info-5/">More info</button></a>
+        </div>
+        <div class="airingnow__column">
+            <img class="airingnow__img" src="{{ component['Umovie-img6']}}
+            <h4 class="airingnow__title">{{ component['Umovie-txt6']}}</h4>
+            <p class="airingnow__text"></p>
+            <button type="button" class="airingnow__b_Ticket" id="button6"><a href="/more-info-6/">More info</button></a>
+        </div>
+    </div>
+  
+
+  
+  
+{% endblock %}

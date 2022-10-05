@@ -1,0 +1,24 @@
+/**
+  ANIMATIONS
+  animation constants
+**/
+
+// examples:
+$transition-timing: 0.2s;
+$transition-double: 0.4s;
+
+$link-transition: (
+    color: color $transition-timing $easeOutQuad,
+    underline: transform $transition-timing $easeOutQuad
+);
+
+$button-transition: (
+    primary: background-color $transition-timing $easeOutQuad,
+    secondary-color: color $transition-timing $easeOutQuad,
+    secondary-border-color: border-color $transition-timing $easeOutQuad
+);
+
+$folksonomy-transition: background-color $transition-timing $easeOutQuad, color $transition-timing $easeOutQuad;
+
+$featured-categories: background-color $transition-timing $easeOutQuad, color $transition-timing $easeOutQuad, border-color $transition-timing $easeOutQuad;
+

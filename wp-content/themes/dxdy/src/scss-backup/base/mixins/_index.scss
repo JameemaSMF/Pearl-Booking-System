@@ -1,0 +1,120 @@
+/**
+  MIXINS
+**/
+
+// ======================================
+// Vertical Align
+// ======================================
+
+@mixin vertical-align {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// ======================================
+// Horizontal Align
+// ======================================
+
+@mixin horizontal-align {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-horizontal-align {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ======================================
+// Visually Hidden
+//
+// Visually hide the element from the
+// screen but still have it accessible
+// via screenreaders
+//
+// ======================================
+@mixin isVisuallyHidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// ======================================
+// Ellipsis
+// ======================================
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+// ======================================
+// IE MEDIA QUERY
+// ======================================
+
+@mixin ieonly() {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+@mixin view-all-link() {
+  @include font(18px, 24px);
+  @include margin(null auto);
+
+  border-bottom: 1px solid $black-light;
+  display: block;
+  max-width: 70px;
+  text-align: center;
+  width: 100%;
+
+  @include grid-media($sm) {
+    @include margin(null 0 null auto);
+
+    border-bottom: none;
+    float: right;
+    position: relative;
+    text-decoration: none;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $blue-dark;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: $transition-double $easeOutQuad;
+    }
+  }
+}
+
+// ======================================
+// Font Size, Line Height and Letter Spacing
+// ======================================
+
+@mixin font($size: null, $line-height: null, $letter-spacing: null) {
+  @if ($size){
+    font-size: $size;
+  }
+
+  @if ($line-height){
+    line-height: $line-height;
+  }
+
+  @if ($letter-spacing){
+    letter-spacing: $letter-spacing;
+  }
+}

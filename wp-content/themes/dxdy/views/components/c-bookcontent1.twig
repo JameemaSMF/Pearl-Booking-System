@@ -1,0 +1,47 @@
+{#
+  BOOK NOW GROUP COMPONENT
+  SASS: /components/booknowgroup
+#}
+{% block content %}
+  <div class="book-now__img">
+        {% filter shortcodes %}
+            [evp_embed_video url="https://group-b-new-dxdystarter.pantheonsite.io/wp-content/uploads/2022/09/Jurassic-Park-Trailer.mp4" loop="true" autoplay="true" controls="false" width="100%" muted="true" ]
+        {% endfilter %} 
+  </div>
+  <div class="book-now__name">
+      <b>{{component['book-now__name']}}</b>
+  </div>
+  <div class="book-now__description">
+      <p>{{component['book-now__description']}}</p>
+  </div>
+  <div class="book-now__divider"></div>
+   <h1> Jurrasic Park </h1 >
+  {# <div class="book-now__timeslots" style="padding-top: 3rem; padding-bottom: 2rem; margin: auto; width: 80%;">
+      {{component['book-now__timeslots']}} #}
+      <table class="book-now__table">
+          <tr>
+              <th>Date</th>
+              <th>Time slot</th>
+              <th>Location</th>
+              <th></th>
+          </tr>
+          <tr>
+              <td rowspan="2">30-08-2022</td>
+              <td>11:00am</td>
+              <td>Theatre A : Hall Rose</td>
+              <td> <a href="/jurassic-park-11am-show/"><button >Book now</button></a></td>
+          </tr>
+          <tr>
+              <td>6:00pm</td>
+              <td>Theatre A: Hall Rose</td>
+              <td><a href="/jurassic-park-6pm-show/"><button>Book now</button></a></td>
+
+
+          </tr>
+      </table>
+      {# <button class"book-now__button">Book now</button> #}
+
+  </div>
+  {# <div> #}
+       
+{% endblock %}    

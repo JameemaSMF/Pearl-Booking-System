@@ -1,0 +1,46 @@
+//*------------------------------------*\
+//    $HIGHLIGHTED TEXT COMPONENT
+//*------------------------------------*/
+
+.highlightedtext {
+    margin-bottom: px-to-rem(34px);
+
+    @media screen and (min-width: '#{$large-breakpoint}px') {
+        margin-bottom: px-to-rem(47px);
+    }
+
+    .component__background {
+        background-size: cover;
+        background-color: map-get($colors, blue);
+    }
+
+    .component__content {
+        padding-bottom: px-to-rem(90px);
+        padding-top: px-to-rem(70px);
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            margin: 0 auto;
+            max-width: 944px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .highlightedtext__title {
+            color: map-get(map-get($colors, neutrals), white );
+            font-weight: map-get($font-weights, bold);
+            font-size: px-to-rem(35px);
+            letter-spacing: (0.015em);
+            line-height: px-to-rem(35px);
+            text-align: center;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            @media screen and (min-width: '#{$large-breakpoint}px') {
+                font-size: px-to-rem(45px);
+                line-height: px-to-rem(58px);
+            }
+        }
+    }
+}

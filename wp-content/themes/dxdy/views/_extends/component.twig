@@ -1,0 +1,20 @@
+{#
+  BASE COMPONENT WRAPPER
+  receives the following params:
+  - component_name: should be a lowercase__string with double underscore separators
+  - load_js: should be a CamelCase string matching a JS class to be loaded
+  - custom_attributes: a string - are there any custom attributes on the .component element?
+  - background: should be a Boolean - is this component using a background color or image?
+  - background_img: should be a string indicating a url or path to an image asset
+  - scroll_animation: should be a Boolean - are we performing any animations on this component on scroll?
+#}
+
+<section class="component {{component_name}} {% if custom_classes %}{{custom_classes}}{% endif %}" {% if load_js %} data-loadcomponent="{{load_js}}" {% endif %} {% if scroll_animation %} data-visible="false" {% endif %} {% if custom_attributes %} {{custom_attributes}} {% endif %}>
+  {% if background %}
+    <div class="component__background" aria-role="presentation" {% if background_img %} style="background-image: url('{{background_img}}');" {% endif %}> {% block component_background_content %}{% endblock %}
+      </div>
+    {% endif %}
+    <div class="component__content"> {% block component_content %}{% endblock %}</div>
+    {# Only use this if there is truly no other option #}
+    {% block component_extra %}{% endblock %}
+</section>

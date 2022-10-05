@@ -1,0 +1,26 @@
+{#
+  MORE INFO COMPONENT
+  SASS: /components/moreinfogroup
+#}
+{% block content %}
+  <div class="more-info__img">
+      {% filter shortcodes %}
+            [evp_embed_video url="https://group-b-new-dxdystarter.pantheonsite.io/wp-content/uploads/2022/09/Suicide-Squad-Official-Trailer-1-HD.mp4" loop="true" autoplay="true" controls="false" width="100%" height="100px"muted="true" ]
+        {% endfilter %} 
+  </div>
+  <br>
+  <br>
+  <div class="more-info__divider"></div>
+
+  <div class="more-info__name">
+      <h1>{{component['more-info__name']}}</h1>
+      {# <h1>  Suicide Squad </h1> #}
+  </div>
+  <div class="more-info__description">
+      <p>{{component['more-info__description']}}</p>
+  </div>
+  <div class="more-info__coming-soon">
+      <center><h2>{{component['more-info__coming-soon']}}</h2></center>
+  </div>
+       
+{% endblock %}    

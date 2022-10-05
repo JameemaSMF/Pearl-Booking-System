@@ -1,0 +1,16 @@
+{#
+  BUTTONS COMPONENT
+  SASS: /components/buttons
+#}
+
+{% if button.type == 'primary-small' %}
+	{% set class = 'primary-small' %}
+{% elseif button.type == 'secondary' %}
+	{% set class = 'secondary' %}
+{% else %}
+	{% set class = 'primary' %}
+{% endif %}
+
+<a href="{{ button.url }}" target="{{button.target}}" class="component__button component__button--{{class}}">
+	<span class="component__button-text">{{ button.label }}</span>
+</a>

@@ -1,0 +1,9 @@
+
+{% extends "base.twig" %}
+
+{% block content %}
+{% for component in post.get_field('booknowpage1') %}
+    {% include 'components/c-' ~ component.acf_fc_layout ~ '.twig' %}
+{% endfor %}
+
+{% endblock %}    

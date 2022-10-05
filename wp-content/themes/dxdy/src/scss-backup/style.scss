@@ -1,0 +1,47 @@
+/*!
+Theme Name: NAME
+Theme URI: URI
+Author: AUTHOR
+Author URI: AUTHORURI
+Description: DESCRIPTION
+Version: VERSION
+*/
+
+/*
+SASS entry point
+*/
+@import "base/reset";
+@import "base/mixins/index";
+@import "base/constants/index";
+@import "base/functions/index";
+@import "base/animations";
+@import "base/fonts";
+@import "base/icons";
+@import "base/constants/typographic";
+
+/* Components */
+@import "components/component";
+@import "components/button";
+@import "components/header";
+@import "components/hero";
+@import "components/charts";
+@import "components/imagewithcaption";
+@import "components/quote";
+@import "components/highlightedtext";
+@import "components/calltoaction";
+@import "components/emailsignup";
+@import "components/footer";
+@import "components/wysiwyg";
+@import "components/twocolgrid";
+@import "components/threecolgrid";
+@import "components/location";
+@import "components/booknow";
+@import "components/airingnow";
+@import "components/upcoming";
+@import "components/signup";
+@import "components/login";
+@import "components/Seating";
+@import "components/advertise";
+@import "components/moreinfo";
+@import "components/landing";
+@import "components/offer";

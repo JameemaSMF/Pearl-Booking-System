@@ -1,0 +1,50 @@
+//*------------------------------------*\
+//    $CHART COMPONENT
+//*------------------------------------*/
+
+
+.chart {
+    border: 2px solid map-get($colors, neutrals, black);
+    border-radius: 6px;
+    padding: 30px 0;
+
+    &__title {
+        @include font(30px, 40px);
+        color: map-get($colors, neutrals, black);
+    }
+
+    &__source {
+        @include font(14px, 20px);
+        font-weight: map-get($font-weights, regular);
+        margin-bottom: 0 !important;
+
+        @media screen and (min-width: '#{$small-breakpoint}px') {
+            margin-top: -68px;
+            text-align: right;
+        }
+    }
+
+    #legend {
+        ul {
+            margin-top: 28px;
+
+            @media screen and (min-width: '#{$small-breakpoint}px') {
+                margin-top: 20px;
+            }
+
+            li {
+                list-style: none;
+
+                &:before {
+                    content: none;
+                    display: none;
+                }
+
+                > p {
+                    @include font(16px, 30px);
+                    color: map-get($colors, neutrals, gray) !important;
+                }
+            }
+        }
+    }
+}

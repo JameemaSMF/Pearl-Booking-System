@@ -1,0 +1,22 @@
+//*------------------------------------*\
+//    $ADVERTISE COMPONENT
+//*------------------------------------*/
+
+.advertise {
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 12rem;
+        padding-bottom: 7rem;
+    }
+
+    &__description {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        display: flex;
+        justify-content: center;
+    }
+
+}

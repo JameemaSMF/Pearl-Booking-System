@@ -1,0 +1,40 @@
+{#
+  HERO COMPONENT
+  SASS: /components/hero
+#}
+
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "hero" %}
+{# orange_bg_with_cta, green_bg_with_cta, full_img_with_no_cta #}
+{% set custom_classes = 'orange_bg_with_cta' %}
+{% set load_js = false %}
+{% set custom_attributes = false %}
+{% set background = true %}
+{% set background_img = hero['image_url'] %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+	<div class="component__content--left">
+		<h2 class="component__title">
+		{# {{hero['heading']}} #}
+		Hero Title
+		</h2>
+		<p class="component__copy">
+			{# {{hero['description']}} #}
+			Hero description goes here
+		</p>
+		{# {% if hero['button_text'] and hero['button_link'] %} #}
+			<a href="{{ hero['button_link'] }}" class="component__button component__button--primary">
+				<span class="component__button-text">
+				{# {{ hero['button_text'] }} #}
+				Button Text
+				</span>
+			</a>
+		{# {% endif %} #}
+	</div>
+	<div class="component__content--right">
+		{# <img src="{{background_img}}" alt="{% if hero['image_alt'] is empty %}{{ hero['image_title'] }}{% else %}{{ hero['image_alt'] }}{% endif %}"/> #}
+		<img src="./wp-content/themes/dxdy/images/caption-image.png" alt="image" />
+	</div>
+{% endblock %}

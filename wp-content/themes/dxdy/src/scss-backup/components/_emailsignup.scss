@@ -1,0 +1,46 @@
+//*------------------------------------*\
+//    $EMAILSIGNUP COMPONENT
+//*------------------------------------*/
+
+.emailsignup{
+    .component__background{
+        background-color: map-get($colors, greens, dark);
+    }
+
+    .component__content {
+        padding-bottom: px-to-rem(65px);
+        padding-top: px-to-rem(57px);
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 426px 484px;
+            max-width: px-to-rem(1180px);
+            padding: px-to-rem(150px) 0 px-to-rem(180px) px-to-rem(118px);
+        }
+    }
+
+    &__description {
+        font-family: $Lato;
+        font-weight: map-get($font-weights, boldest);
+        font-size: px-to-rem(40px);
+        line-height: px-to-rem(32px);
+        color: map-get($colors, neutrals, white);
+        margin-bottom: px-to-rem(12px);
+        letter-spacing: 0.015em;
+
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            font-family: $Lato;
+            font-weight: map-get($font-weights, bold);
+            font-size: px-to-rem(60px);
+            line-height: px-to-rem(60px);
+            margin-bottom: 0;
+        }
+    }
+
+    &__form {
+        @media screen and (min-width: '#{$large-breakpoint}px') {
+            margin-left: px-to-rem(33px);
+        }
+    }
+}

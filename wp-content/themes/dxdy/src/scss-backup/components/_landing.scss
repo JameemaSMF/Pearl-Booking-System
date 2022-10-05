@@ -1,0 +1,26 @@
+//------------------------------------\
+//    $LANDING COMPONENT
+//------------------------------------/
+
+.landing{
+
+    &__header{
+        font-family: roboto-regular;
+        margin: auto;
+        width: 80%;
+        padding-top: 8rem;
+        padding-bottom: 1rem;
+    }
+
+     &__addslide{
+       
+        padding-bottom: 1rem;
+
+     }
+     &__movieslides{
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+
+     }
+
+}

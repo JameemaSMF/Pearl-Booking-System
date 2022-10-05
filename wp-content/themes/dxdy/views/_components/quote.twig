@@ -1,0 +1,18 @@
+{#
+  STAT CARDS COMPONENT
+  SASS: /components/statcards
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "quote" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = true %}
+{% set background_img = false %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <blockquote class="quote__blockquote">"Globally, the overall performance of cigarette tax policies is quite low—especially given the magnitude of the economic and health losses related to tobacco use. These results show considerable untapped potential for cigarette tax increases to raise revenue for a COVID-19 recovery and importantly, prevent premature deaths and promote a healthy and productive workforce.."</blockquote>
+    <div class="quote__title">Quote author's name goes here</div>
+    <div class="quote__snippet">Optional text area for author's title or role goes here</div>
+{% endblock %}

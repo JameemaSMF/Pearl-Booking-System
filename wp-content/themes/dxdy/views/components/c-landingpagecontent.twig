@@ -1,0 +1,22 @@
+
+{% block content %}
+
+ <div class = "landing__addslide">
+  {% filter shortcodes %}
+     [smartslider3 slider="5"]
+  {% endfilter %} 
+ </div>
+
+  <div class = "landing__header">
+    <center><h1>{{ component["most_views"]}}</h1></center>
+  </div>
+
+  <div class = "landing__movieslides">
+     {% filter shortcodes %}
+   [smartslider3 slider="6"]
+    {% endfilter %} 
+  </div>
+  <div><center>{{ component["image_1"]}}</center></div>
+  <div><center>{{ component["image_2"]}}</center></div>
+
+{% endblock %}    

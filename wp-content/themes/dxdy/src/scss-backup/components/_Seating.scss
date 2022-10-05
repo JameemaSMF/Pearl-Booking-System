@@ -1,0 +1,15 @@
+//------------------------------------\
+//    $SEATING COMPONENT
+//------------------------------------/
+
+.seating{
+    @media screen and (min-width: '#{$small-breakpoint}px') {
+        margin-bottom: px-to-rem(30px);
+    }
+    &__confirm{
+        text-align: center;
+        background-color: black;
+        color: white;
+
+    }
+}

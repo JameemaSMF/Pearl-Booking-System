@@ -1,0 +1,19 @@
+{#
+  IMAGE WITH CAPTION COMPONENT
+  SASS: /components/imagewithcaption
+#}
+{% extends "./_extends/component.twig" %}
+{# component params go here #}
+{% set component_name = "imagewithcaption" %}
+{% set load_js = false %}
+{% set custom_attributes = "id='#{id}'" %}
+{% set background = false %}
+{% set background_img = theme.link ~ '/images/caption-image.png' %}
+{% set scroll_animation = true %}
+
+{% block component_content %}
+    <figure class="imagewithcaption__content">
+        <img src="{{background_img}}" class="imagewithcaption__content--image" alt=""/>
+        <figcaption class="imagewithcaption__content--caption">Image Caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Excepteur sint occaecat cupidatat non proident. </figcaption>
+    </figure>
+{% endblock %}
