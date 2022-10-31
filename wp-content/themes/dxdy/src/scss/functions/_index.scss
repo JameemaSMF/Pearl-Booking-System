@@ -1,0 +1,21 @@
+// ======================================
+// Strip Units
+//
+// Removes units (usually 'px', 'rem' or 'em')
+// from a value passed in and returns it as
+// a pure integer
+// ======================================
+@function strip-units($value) {
+    @return ($value / ($value * 0 + 1));
+  }
+  
+  // ======================================
+  // Px-To-Rem
+  //
+  // Converts a pixel value to rems
+  // @param {*} $px - either number or string
+  // @return {*} - value in rems, with $font-size-default as base
+  // ======================================
+  @function px-to-rem($px) {
+    @return ( strip-units($px) / strip-units($font-size-default) ) * 1rem;
+  }

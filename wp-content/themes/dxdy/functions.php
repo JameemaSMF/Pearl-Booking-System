@@ -72,7 +72,26 @@ class StarterSite extends Timber\Site {
 
 	/** This is where you can register custom post types. */
 	public function register_post_types() {
-
+	  register_post_type('Locations', [
+    	    'labels' => [
+      		'name' => __( 'Locations' ),
+      		'singular_name' => __( 'Locations' ),
+      		'all_items' => __( 'All Locations' ),
+            'add_new' => __( 'Add Location' ),
+      		'add_new_item' => __( 'Add New Location' ),
+      		'edit' => __( 'Edit' ),
+      		'edit_item' => __( 'Edit Location' ),
+      		'new_item' => __( 'New Location' ),
+      		'view_item' => __( 'View Location' ),
+      		'search_items' =>  __( 'Search Locations' )
+    	    ],
+      	    'public' => true,
+      	    'exclude_from_search' => false,
+      	    'show_ui' => true,
+	    	'hierarchical' => false, // This will allow URL's like "/labels/boston/cambridge/"
+      	    'supports' => array('title','thumbnail'),
+      	    'menu_icon' => 'dashicons-admin-location'
+  	   ]);
 	}
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies() {
@@ -95,6 +114,7 @@ class StarterSite extends Timber\Site {
         $context['footer_menu_center'] = new Timber\Menu('footer-menu-center');
         $context['footer_menu_right'] = new Timber\Menu('footer-menu-right');
 		$context['site']  = $this;
+		$context['options'] = get_fields('options');
 		return $context;
 	}
 
@@ -221,8 +241,6 @@ class StarterSite extends Timber\Site {
         );
       }
   }
-  
-
 }
 
 new StarterSite();
@@ -251,3 +269,64 @@ function my_acf_json_load_point( $paths ) {
    $paths[] = MY_PLUGIN_DIR_PATH . '/acf-json';
    return $paths;
 }
+
+// option pages
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page([
+    'page_title'  => 'Global Settings',
+    'menu_title'  => 'Global Settings',
+    'menu_slug'   => 'global-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Header',
+    'menu_title'  => 'Header',
+    'menu_slug'   => 'nav-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Footer',
+    'menu_title'  => 'Footer',
+    'menu_slug'   => 'footer-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Popup',
+    'menu_title'  => 'Popup',
+    'menu_slug'   => 'popup-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Maps',
+    'menu_title'  => 'Maps',
+    'menu_slug'   => 'map-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Templates',
+    'menu_title'  => 'Templates',
+    'menu_slug'   => 'template-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => 'Vacancy Application',
+    'menu_title'  => 'Vacancy Application',
+    'menu_slug'   => 'vacancy-app-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+
+  acf_add_options_sub_page([
+    'page_title'  => '404 Page',
+    'menu_title'  => '404 Page',
+    'menu_slug'   => '404-settings',
+    'parent_slug' => 'global-settings',
+  ]);
+}
+
